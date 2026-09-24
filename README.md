@@ -235,7 +235,8 @@ CREATE TABLE Employees_News(
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
 </p>
- ![Uploading image_43592672 (1).jpg…]()
+## 📊![SQL Live Dashboard](image_XJD0ee.png)
+
 
 
 
