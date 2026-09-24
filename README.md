@@ -16,7 +16,13 @@
 
 <p align="center"><i>💭 "Every table holds a story. A good query is just the right question asked at the right time." ✨</i></p>
 
----
+<p align="center"><b>📦 3 Tables &nbsp;•&nbsp; 🔍 17 Queries &nbsp;•&nbsp; 🧠 6 SQL Concepts &nbsp;•&nbsp; 🐘 PostgreSQL</b></p>
+
+<p align="center">⭐ <i>Practice • Learn • Repeat • Master SQL</i> ⭐</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=About%20the%20Project&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📖 About the Project">
@@ -24,7 +30,9 @@
 
 DataTransformer is a hands-on SQL project built in **PostgreSQL**. It uses three simple tables (customers, orders, employees) to practise the most important SQL concepts, from creating tables to writing window functions and conditional logic.
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Features&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🎯 Features">
@@ -38,7 +46,9 @@ DataTransformer is a hands-on SQL project built in **PostgreSQL**. It uses three
 - ✅ Window functions (running total, ranking)
 - ✅ `CASE` expressions for categorisation
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Database%20Setup&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🏗️ Database Setup">
@@ -49,7 +59,9 @@ CREATE DATABASE DataTransformer;
 \c DataTransformer
 ```
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tables&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📋 Tables">
@@ -61,7 +73,9 @@ CREATE DATABASE DataTransformer;
 | 🛒 `Orders_News` | OrderID (PK), CustomerID (FK), OrderDate, TotalAmount | Orders placed by customers |
 | 🧑‍💼 `Employees_News` | EmployeeID (PK), FirstName, LastName, Department, HireDate, Salary | Employee details |
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Relationship&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🔗 Relationship">
@@ -74,7 +88,9 @@ Customers_News (1) ───────< (Many) Orders_News
 
 One customer can place many orders.
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
@@ -84,7 +100,9 @@ One customer can place many orders.
 - 🛒 **Orders:** 2 records (IDs 101, 102)
 - 🧑‍💼 **Employees:** 2 records (IDs 1, 2)
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Queries%20Covered&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🔍 Queries Covered">
@@ -143,7 +161,9 @@ One customer can place many orders.
 | 16 | Discount tier: > 1000 = 10%, > 500 = 5% |
 | 17 | Salary category: High (>= 55000), Medium (>= 40000), Low |
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=How%20to%20Run&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="▶️ How to Run">
@@ -154,7 +174,9 @@ One customer can place many orders.
 3. 📥 Run the `INSERT` statements.
 4. 🔎 Run the queries one by one and check the output.
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Notes&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📝 Notes">
@@ -163,7 +185,9 @@ One customer can place many orders.
 - ⚠️ Use table names consistently. Tables are created as `Customers_News`, `Orders_News`, `Employees_News`, so every query and the foreign key must use these same names.
 - 💡 With the current sample data, query 11 (`John` → `Jonathan`) and query 16 (discounts) show no changes, because no name is `John` and no order is above 500. Add more rows to see them in action.
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Future%20Improvements&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🚀 Future Improvements">
@@ -174,7 +198,9 @@ One customer can place many orders.
 - 👁️ Create views for common reports
 - ⚙️ Add stored procedures and triggers
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tech%20Used&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧰 Tech Used">
@@ -183,7 +209,9 @@ One customer can place many orders.
 - 🐘 PostgreSQL
 - 💾 SQL (DDL, DML, DQL)
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Author&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="👩‍💻 Author">
@@ -191,7 +219,9 @@ One customer can place many orders.
 
 **Kavita Khushalani**
 
----
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
+</p>
 
 <p align="center">Made with ❤️ by <b>Kavita Khushalani</b></p>
 
