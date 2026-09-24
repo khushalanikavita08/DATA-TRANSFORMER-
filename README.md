@@ -236,7 +236,8 @@ CREATE TABLE Employees_News(
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
 </p>
- ![Uploading ChatGPT Image Sep 24, 2026, 11_57_50 PM.png…]()
+![Uploading ChatGPT Image Sep 24, 2026, 11_59_11 PM.png…]()
+
 
 
 
