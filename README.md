@@ -236,6 +236,8 @@ CREATE TABLE Employees_News(
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
 </p>
+<img width="1312" height="1199" alt="ChatGPT Image Sep 23, 2026, 10_52_20 AM" src="https://github.com/user-attachments/assets/08a566aa-1453-4045-bb3a-bbb792c73d8c" />
+
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers Data">
