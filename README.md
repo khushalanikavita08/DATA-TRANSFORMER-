@@ -1,5 +1,5 @@
 # DATA-TRANSFORMER-
-<p align="center">
+  <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&height=240&section=header&text=DATA%20TRANSFORMER&fontSize=56&fontColor=ffffff&fontAlignY=38&desc=Database%20Design%20%7C%20Joins%20%7C%20Functions%20%7C%20Analytics&descSize=22&descAlignY=60" alt="DataTransformer banner">
 </p>
 
@@ -18,37 +18,25 @@
 
 <p align="center"><b>📦 3 Tables &nbsp;•&nbsp; 🔍 17 Queries &nbsp;•&nbsp; 🧠 6 SQL Concepts &nbsp;•&nbsp; 🐘 PostgreSQL</b></p>
 
-<p align="center">⭐ <i>Practice • Learn • Repeat • Master SQL</i> ⭐</p>
-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
 </p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Table%20of%20Contents&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📑 Table of Contents">
-</p>
+## 📑 Table of Contents
 
-1. 📖 About the Project
-2. 🎯 Features
-3. 🧰 Tech Used & Prerequisites
-4. 🏗️ Database Setup
-5. 📋 Tables (Schema)
-6. 🔗 Relationship
-7. 🧾 Sample Data
-8. 🔍 Queries Covered (Joins, Subqueries, Date, String, Window, CASE)
-9. ▶️ How to Run
-10. 🎓 Learning Outcomes
-11. 📝 Notes
-12. 🚀 Future Improvements
-13. 👩‍💻 Author
+| # | Section | # | Section |
+|---|---|---|---|
+| 1 | [📖 About the Project](#-about-the-project) | 8 | [🔍 Queries Covered](#-queries-covered) |
+| 2 | [🎯 Features](#-features) | 9 | [▶️ How to Run](#️-how-to-run) |
+| 3 | [🧰 Tech Used & Prerequisites](#-tech-used--prerequisites) | 10 | [🎓 Learning Outcomes](#-learning-outcomes) |
+| 4 | [🏗️ Database Setup](#️-database-setup) | 11 | [📝 Notes](#-notes) |
+| 5 | [📋 Tables (Schema)](#-tables-schema) | 12 | [🚀 Future Improvements](#-future-improvements) |
+| 6 | [🔗 Relationship](#-relationship) | 13 | [👩‍💻 Author](#-author) |
+| 7 | [🧾 Sample Data](#-sample-data) | | |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=About%20the%20Project&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📖 About the Project">
-</p>
+## 📖 About the Project
 
 **DataTransformer** is a hands-on SQL project built in **PostgreSQL**. The goal is to take raw data stored in a few simple tables and *transform* it into useful information using SQL.
 
@@ -58,15 +46,11 @@ The project is built around a small **e-commerce / company** scenario:
 - 🛒 Customers place **orders** worth some amount of money.
 - 🧑‍💼 The company has **employees** working in different departments with different salaries.
 
-Using these three tables, the project practises **17 queries** that cover the most commonly used SQL concepts, from combining tables (joins) to ranking rows and creating categories with conditional logic. Every query below has its **purpose, SQL code, explanation and expected output** so it is easy to follow.
+Using these three tables, the project practises **17 queries** that cover the most commonly used SQL concepts, from combining tables (joins) to ranking rows and creating categories with conditional logic. Every query has its **purpose, SQL code, explanation and expected output**.
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Features&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🎯 Features">
-</p>
+## 🎯 Features
 
 | ✅ Feature | 📝 What it covers |
 |---|---|
@@ -80,13 +64,9 @@ Using these three tables, the project practises **17 queries** that cover the mo
 | 📊 Window functions | Running total with `SUM() OVER`, ranking with `RANK() OVER` |
 | 🎛️ Conditional logic | `CASE WHEN ... THEN ... ELSE ... END` for discounts and salary bands |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tech%20Used%20%26%20Prerequisites&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧰 Tech Used & Prerequisites">
-</p>
+## 🧰 Tech Used & Prerequisites
 
 | 🧰 Item | 📝 Details |
 |---|---|
@@ -95,17 +75,14 @@ Using these three tables, the project practises **17 queries** that cover the mo
 | 🖥️ Tools | `psql` command line, pgAdmin, DBeaver or any PostgreSQL client |
 
 **Before you start, you should have:**
-- PostgreSQL installed and running on your computer
-- A user with permission to create a database
-- Basic idea of what a table, row and column are
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+- ✔️ PostgreSQL installed and running on your computer
+- ✔️ A user with permission to create a database
+- ✔️ Basic idea of what a table, row and column are
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Database%20Setup&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🏗️ Database Setup">
-</p>
+---
+
+## 🏗️ Database Setup
 
 First create the database, then connect to it so that all the tables are created inside it.
 
@@ -121,17 +98,11 @@ Connect to the new database (in `psql`):
 
 > 💡 In pgAdmin or DBeaver, simply select the `datatransformer` database from the left panel before running the script.
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tables%20%28Schema%29&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📋 Tables (Schema)">
-</p>
+## 📋 Tables (Schema)
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers_News&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers_News">
-</p>
+### 👤 Customers_News
 
 Stores the people who have registered as customers.
 
@@ -153,9 +124,7 @@ CREATE TABLE Customers_News(
 );
 ```
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Orders_News&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🛒 Orders_News">
-</p>
+### 🛒 Orders_News
 
 Stores the orders placed by customers. Each order belongs to exactly one customer.
 
@@ -176,9 +145,7 @@ CREATE TABLE Orders_News (
 );
 ```
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Employees_News&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🧑‍💼 Employees_News">
-</p>
+### 🧑‍💼 Employees_News
 
 Stores the employees of the company.
 
@@ -202,13 +169,9 @@ CREATE TABLE Employees_News(
 );
 ```
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Relationship&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🔗 Relationship">
-</p>
+## 🔗 Relationship
 
 ```
  Customers_News                      Orders_News
@@ -227,35 +190,25 @@ CREATE TABLE Employees_News(
 - 🔗 **Foreign Key (FK):** `Orders_News.CustomerID` must always match an existing `Customers_News.CustomerID`, so an order can never belong to a customer that does not exist.
 - 👥 **One-to-Many:** one customer can place many orders, but each order belongs to only one customer.
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
-</p>
+## 🧾 Sample Data
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers Data">
-</p>
+**👤 Customers_News**
 
 | CustomerID | FirstName | LastName | Email | RegistrationDate |
 |---|---|---|---|---|
 | 1 | kavita | khu | kavita.khu@email.com | 2022-03-15 |
 | 2 | bhavika | tha | bhavika.tha@email.com | 2021-11-02 |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Orders%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🛒 Orders Data">
-</p>
+**🛒 Orders_News**
 
 | OrderID | CustomerID | OrderDate | TotalAmount |
 |---|---|---|---|
 | 101 | 1 | 2023-07-11 | 150.50 |
 | 102 | 2 | 2023-08-03 | 200.75 |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Employees%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🧑‍💼 Employees Data">
-</p>
+**🧑‍💼 Employees_News**
 
 | EmployeeID | FirstName | LastName | Department | HireDate | Salary |
 |---|---|---|---|---|---|
@@ -271,13 +224,9 @@ VALUES
 (102, 2, '2023-08-03', 200.75);
 ```
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Queries%20Covered&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🔍 Queries Covered">
-</p>
+## 🔍 Queries Covered
 
 | 🧩 Category | 🔢 Queries | 🎯 Skill practised |
 |---|---|---|
@@ -288,9 +237,7 @@ VALUES
 | 📊 Window Functions | 14 – 15 | Running totals and ranking |
 | 🎛️ CASE Expressions | 16 – 17 | If-else logic in SQL |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Joins&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🔀 Joins">
-</p>
+### 🔀 Joins
 
 A **join** combines rows from two tables using a related column, here `CustomerID`. The type of join decides which rows are kept.
 
@@ -301,7 +248,9 @@ A **join** combines rows from two tables using a related column, here `CustomerI
  rows              matching B         matching A         both tables
 ```
 
-#### 1️⃣ INNER JOIN
+<details>
+<summary><b>1️⃣ INNER JOIN</b></summary>
+
 **🎯 Purpose:** get all orders together with the details of the customer who placed them.
 **💡 How it works:** returns only the rows where `CustomerID` exists in **both** tables. Customers without orders (and orders without customers) are left out.
 
@@ -318,7 +267,11 @@ ON c.CustomerID = o.CustomerID;
 | 101 | 1 | kavita | khu | kavita.khu@email.com | 2023-07-11 | 150.50 |
 | 102 | 2 | bhavika | tha | bhavika.tha@email.com | 2023-08-03 | 200.75 |
 
-#### 2️⃣ LEFT JOIN
+</details>
+
+<details>
+<summary><b>2️⃣ LEFT JOIN</b></summary>
+
 **🎯 Purpose:** list **all customers**, along with their orders if they have any.
 **💡 How it works:** every row of the left table (`Customers_News`) is kept. If a customer has no order, the order columns show `NULL`. Useful to find customers who never ordered.
 
@@ -335,7 +288,11 @@ ON c.CustomerID = o.CustomerID;
 | 1 | kavita | khu | 101 | 2023-07-11 | 150.50 |
 | 2 | bhavika | tha | 102 | 2023-08-03 | 200.75 |
 
-#### 3️⃣ RIGHT JOIN
+</details>
+
+<details>
+<summary><b>3️⃣ RIGHT JOIN</b></summary>
+
 **🎯 Purpose:** list **all orders**, along with their customer details if available.
 **💡 How it works:** every row of the right table (`Orders_News`) is kept. It is the mirror image of a `LEFT JOIN`.
 
@@ -352,7 +309,11 @@ ON c.CustomerID = o.CustomerID;
 | 101 | 1 | 2023-07-11 | 150.50 | kavita | khu | kavita.khu@email.com |
 | 102 | 2 | 2023-08-03 | 200.75 | bhavika | tha | bhavika.tha@email.com |
 
-#### 4️⃣ FULL OUTER JOIN
+</details>
+
+<details>
+<summary><b>4️⃣ FULL OUTER JOIN</b></summary>
+
 **🎯 Purpose:** get **all customers and all orders**, whether they match or not.
 **💡 How it works:** combines `LEFT` and `RIGHT` joins. Unmatched rows from either side appear with `NULL` in the other table's columns.
 
@@ -369,15 +330,17 @@ ON c.CustomerID = o.CustomerID;
 | 1 | kavita | khu | 101 | 2023-07-11 | 150.50 |
 | 2 | bhavika | tha | 102 | 2023-08-03 | 200.75 |
 
+</details>
+
 > 📌 With the current sample data every customer has an order, so all four joins give the same rows. Insert a customer with no order to see the difference between them.
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Subqueries&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🧩 Subqueries">
-</p>
+### 🧩 Subqueries
 
 A **subquery** is a `SELECT` written inside another query. Here it calculates an average, and the outer query uses that value to filter rows.
 
-#### 5️⃣ Orders above the average order amount
+<details>
+<summary><b>5️⃣ Orders above the average order amount</b></summary>
+
 **🎯 Purpose:** find customers who placed an order worth more than the average order.
 **💡 How it works:** the inner query `SELECT AVG(TotalAmount)` returns `175.625`. The outer query keeps only orders with `TotalAmount > 175.625`.
 
@@ -397,7 +360,11 @@ WHERE o.TotalAmount > (
 |---|---|---|---|---|
 | 2 | bhavika | tha | 102 | 200.75 |
 
-#### 6️⃣ Employees above the average salary
+</details>
+
+<details>
+<summary><b>6️⃣ Employees above the average salary</b></summary>
+
 **🎯 Purpose:** find employees who earn more than the company average.
 **💡 How it works:** the average salary is `(50000 + 55000) / 2 = 52500`, so only employees earning more than that are returned.
 
@@ -414,11 +381,13 @@ WHERE Salary > (
 |---|---|---|---|---|
 | 2 | Susan | Lee | HR | 55000.00 |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Date%20Functions&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="📅 Date Functions">
-</p>
+</details>
 
-#### 7️⃣ Extract year and month
+### 📅 Date Functions
+
+<details>
+<summary><b>7️⃣ Extract year and month</b></summary>
+
 **🎯 Purpose:** split an order date into separate year and month columns, useful for monthly or yearly reports.
 **💡 How it works:** `EXTRACT(part FROM date)` pulls out one part of a date such as `YEAR`, `MONTH` or `DAY`.
 
@@ -434,7 +403,11 @@ FROM Orders_News;
 | 101 | 2023-07-11 | 2023 | 7 |
 | 102 | 2023-08-03 | 2023 | 8 |
 
-#### 8️⃣ Difference in days from today
+</details>
+
+<details>
+<summary><b>8️⃣ Difference in days from today</b></summary>
+
 **🎯 Purpose:** find how many days ago each order was placed.
 **💡 How it works:** in PostgreSQL, subtracting one `DATE` from another gives the number of days. `CURRENT_DATE` is today's date.
 
@@ -446,7 +419,11 @@ FROM Orders_News;
 
 > 📌 The result depends on the day you run the query, so it grows by 1 every day. Example: an order on `2023-07-11` gives the number of days between that date and today.
 
-#### 9️⃣ Format the date as DD-Mon-YYYY
+</details>
+
+<details>
+<summary><b>9️⃣ Format the date as DD-Mon-YYYY</b></summary>
+
 **🎯 Purpose:** show dates in an easy-to-read format.
 **💡 How it works:** `TO_CHAR(date, 'format')` converts a date to text. `DD` = day, `Mon` = short month name, `YYYY` = 4-digit year.
 
@@ -461,11 +438,13 @@ FROM Orders_News;
 | 101 | 11-Jul-2023 |
 | 102 | 03-Aug-2023 |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=String%20Functions&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🔤 String Functions">
-</p>
+</details>
 
-#### 🔟 Concatenate first and last name
+### 🔤 String Functions
+
+<details>
+<summary><b>🔟 Concatenate first and last name</b></summary>
+
 **🎯 Purpose:** create a full name column.
 **💡 How it works:** `CONCAT()` joins values together. A space `' '` is added in the middle.
 
@@ -480,7 +459,11 @@ FROM Customers_News;
 | 1 | kavita khu |
 | 2 | bhavika tha |
 
-#### 1️⃣1️⃣ Replace part of a string
+</details>
+
+<details>
+<summary><b>1️⃣1️⃣ Replace part of a string</b></summary>
+
 **🎯 Purpose:** replace the text `John` with `Jonathan` in first names.
 **💡 How it works:** `REPLACE(text, old, new)` swaps every occurrence of `old` with `new`. It only changes the query result, not the stored data.
 
@@ -497,7 +480,11 @@ FROM Customers_News;
 
 > 📌 No name contains `John` in the sample data, so nothing changes. Insert a customer named `John` to see it working.
 
-#### 1️⃣2️⃣ Uppercase and lowercase
+</details>
+
+<details>
+<summary><b>1️⃣2️⃣ Uppercase and lowercase</b></summary>
+
 **🎯 Purpose:** show first names in CAPITAL letters and last names in small letters.
 **💡 How it works:** `UPPER()` converts text to capitals and `LOWER()` converts it to small letters.
 
@@ -513,7 +500,11 @@ FROM Employees_News;
 | 1 | MARK | johnson |
 | 2 | SUSAN | lee |
 
-#### 1️⃣3️⃣ Trim extra spaces
+</details>
+
+<details>
+<summary><b>1️⃣3️⃣ Trim extra spaces</b></summary>
+
 **🎯 Purpose:** clean the email column by removing spaces at the start and end.
 **💡 How it works:** `TRIM()` removes leading and trailing spaces. It is very useful when cleaning messy data.
 
@@ -528,13 +519,15 @@ FROM Customers_News;
 | 1 | kavita.khu@email.com |
 | 2 | bhavika.tha@email.com |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Window%20Functions&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="📊 Window Functions">
-</p>
+</details>
+
+### 📊 Window Functions
 
 A **window function** does a calculation across a set of rows related to the current row **without collapsing them** into one row (unlike `GROUP BY`). It is written with `OVER (...)`.
 
-#### 1️⃣4️⃣ Running total
+<details>
+<summary><b>1️⃣4️⃣ Running total</b></summary>
+
 **🎯 Purpose:** show the cumulative sum of order amounts, in order of date.
 **💡 How it works:** `SUM(...) OVER (ORDER BY OrderDate ...)` adds the current order to all earlier orders. `UNBOUNDED PRECEDING` means "from the first row", up to the `CURRENT ROW`.
 
@@ -552,7 +545,11 @@ FROM Orders_News;
 | 101 | 2023-07-11 | 150.50 | 150.50 |
 | 102 | 2023-08-03 | 200.75 | 351.25 |
 
-#### 1️⃣5️⃣ Rank orders by amount
+</details>
+
+<details>
+<summary><b>1️⃣5️⃣ Rank orders by amount</b></summary>
+
 **🎯 Purpose:** give rank 1 to the highest-value order, rank 2 to the next, and so on.
 **💡 How it works:** `RANK() OVER (ORDER BY TotalAmount DESC)` sorts by amount from high to low. If two orders have the same amount they get the same rank and the next rank is skipped.
 
@@ -567,13 +564,15 @@ FROM Orders_News;
 | 102 | 200.75 | 1 |
 | 101 | 150.50 | 2 |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=CASE%20Expressions&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🎛️ CASE Expressions">
-</p>
+</details>
+
+### 🎛️ CASE Expressions
 
 `CASE` is SQL's version of **if / else if / else**. Conditions are checked from top to bottom and the first one that is true wins.
 
-#### 1️⃣6️⃣ Discount based on order amount
+<details>
+<summary><b>1️⃣6️⃣ Discount based on order amount</b></summary>
+
 **🎯 Purpose:** assign a discount label to each order.
 
 | 💰 Condition | 🏷️ Discount |
@@ -599,7 +598,11 @@ FROM Orders_News;
 
 > 📌 Both orders are below 500, so both get `No Discount`. Try inserting an order of 600 or 1200 to see the other labels.
 
-#### 1️⃣7️⃣ Salary category
+</details>
+
+<details>
+<summary><b>1️⃣7️⃣ Salary category</b></summary>
+
 **🎯 Purpose:** group employees into salary bands.
 
 | 💰 Condition | 🏷️ Category |
@@ -623,13 +626,11 @@ FROM Employees_News;
 | 1 | Mark | Johnson | 50000.00 | Medium |
 | 2 | Susan | Lee | 55000.00 | High |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+</details>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=How%20to%20Run&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="▶️ How to Run">
-</p>
+---
+
+## ▶️ How to Run
 
 1. 🛠️ **Create the database** and connect to it:
    ```sql
@@ -647,13 +648,9 @@ Or run the whole script from the terminal:
 psql -U postgres -d DataTransformer -f your_script.sql
 ```
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Learning%20Outcomes&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🎓 Learning Outcomes">
-</p>
+## 🎓 Learning Outcomes
 
 After completing this project you will be able to:
 
@@ -666,26 +663,21 @@ After completing this project you will be able to:
 - ✅ Calculate running totals and rankings using window functions
 - ✅ Create categories and labels with `CASE`
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Notes&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📝 Notes">
-</p>
+## 📝 Notes
 
-- ⚠️ **Use table names consistently.** Tables are created as `Customers_News`, `Orders_News` and `Employees_News`, so every query and the foreign key must use these exact names (with the **s**). Using `Customers_New` will give a *relation does not exist* error.
-- 💡 With the current sample data, query 11 (`John` → `Jonathan`) and query 16 (discounts) show no changes, because no name is `John` and no order is above 500. Add more rows to see them in action.
-- 🕒 Query 8 gives a different answer every day because it uses `CURRENT_DATE`.
-- 🔤 PostgreSQL folds unquoted names to lowercase, so `Customers_News` and `customers_news` are the same table.
+> ⚠️ **Use table names consistently.** Tables are created as `Customers_News`, `Orders_News` and `Employees_News`, so every query and the foreign key must use these exact names (with the **s**). Using `Customers_New` will give a *relation does not exist* error.
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+> 💡 With the current sample data, query 11 (`John` → `Jonathan`) and query 16 (discounts) show no changes, because no name is `John` and no order is above 500. Add more rows to see them in action.
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Future%20Improvements&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🚀 Future Improvements">
-</p>
+> 🕒 Query 8 gives a different answer every day because it uses `CURRENT_DATE`.
+
+> 🔤 PostgreSQL folds unquoted names to lowercase, so `Customers_News` and `customers_news` are the same table.
+
+---
+
+## 🚀 Future Improvements
 
 | 🚀 Idea | 📝 What it adds |
 |---|---|
@@ -696,29 +688,17 @@ After completing this project you will be able to:
 | ⚙️ Stored procedures and triggers | Automatic actions when data changes |
 | 🔒 Constraints | `NOT NULL`, `UNIQUE` on email, `CHECK` for positive amounts |
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Thought&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="💭 Thought">
-</p>
+## 💭 Thought
 
 > *"Every table holds a story. A good query is just the right question asked at the right time."* ✨
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
+---
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Author&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="👩‍💻 Author">
-</p>
+## 👩‍💻 Author
 
 **Kavita Khushalani**
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
-</p>
 
 <p align="center">Made with ❤️ by <b>Kavita Khushalani</b></p>
 
