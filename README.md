@@ -1,4 +1,3 @@
-<img width="1536" height="1024" alt="ChatGPT Image Sep 25, 2026, 12_01_30 AM" src="https://github.com/user-attachments/assets/a675aa3e-356d-482a-b396-167b99841734" /># DATA-TRANSFORMER-
 # DATA-TRANSFORMER-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&height=240&section=header&text=DATA%20TRANSFORMER&fontSize=56&fontColor=ffffff&fontAlignY=38&desc=Database%20Design%20%7C%20Joins%20%7C%20Functions%20%7C%20Analytics&descSize=22&descAlignY=60" alt="DataTransformer banner">
@@ -236,7 +235,7 @@ CREATE TABLE Employees_News(
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
 </p>
-https://chatgpt.com/s/m_6ab56c874c38819185bf373a215503c9
+<img width="1536" height="1024" alt="ChatGPT Image Sep 25, 2026, 12_01_30 AM" src="https://github.com/user-attachments/assets/a675aa3e-356d-482a-b396-167b99841734" /># DATA-TRANSFORMER-
 
 
 
