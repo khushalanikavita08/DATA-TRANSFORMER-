@@ -236,6 +236,7 @@ CREATE TABLE Employees_News(
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
 </p>
+📂 DataTransformer_Live_Sample_Outputs
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers Data">
