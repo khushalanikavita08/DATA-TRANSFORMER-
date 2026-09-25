@@ -83,7 +83,8 @@ Using these three tables, the project practises **17 queries** that cover the mo
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tech%20Used%20%26%20Prerequisites&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧰 Tech Used & Prerequisites">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tech%20Used%20%26%20Prerequisites&fontSize=34&fontColor=ffffff&fontAlignY=40" alt=
+  "🧰 Tech Used & Prerequisites">
 </p>
 
 | 🧰 Item | 📝 Details |
@@ -128,6 +129,8 @@ Connect to the new database (in `psql`):
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tables%20%28Schema%29&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📋 Tables (Schema)">
 </p>
 <img width="1408" height="768" alt="image_43592672 (1)" src="https://github.com/user-attachments/assets/01602902-c9ef-496a-968b-812bc38c1582"
+
+
 
 
 
