@@ -133,7 +133,7 @@ Connect to the new database (in `psql`):
 
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers_News&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers_News">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers_New&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers_New">
 </p>
 
 Stores the people who have registered as customers.
@@ -147,7 +147,7 @@ Stores the people who have registered as customers.
 | `RegistrationDate` | `DATE` | | Date on which the customer registered |
 
 ```sql
-CREATE TABLE Customers_News(
+CREATE TABLE Customers_New(
     CustomerID INT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
@@ -157,7 +157,7 @@ CREATE TABLE Customers_News(
 ```
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Orders_News&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🛒 Orders_News">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Orders_New&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🛒 Orders_New">
 </p>
 
 Stores the orders placed by customers. Each order belongs to exactly one customer.
@@ -165,22 +165,22 @@ Stores the orders placed by customers. Each order belongs to exactly one custome
 | 🔑 Column | 🧬 Data Type | 📌 Constraint | 📝 Meaning |
 |---|---|---|---|
 | `OrderID` | `INT` | PRIMARY KEY | Unique ID of each order |
-| `CustomerID` | `INT` | FOREIGN KEY → `Customers_News(CustomerID)` | Who placed the order |
+| `CustomerID` | `INT` | FOREIGN KEY → `Customers_New(CustomerID)` | Who placed the order |
 | `OrderDate` | `DATE` | | Date of the order |
 | `TotalAmount` | `DECIMAL(10,2)` | | Order value with 2 decimal places |
 
 ```sql
-CREATE TABLE Orders_News (
+CREATE TABLE Orders_New (
     OrderID INT PRIMARY KEY,
     CustomerID INT,
     OrderDate DATE,
     TotalAmount DECIMAL(10,2),
-    FOREIGN KEY (CustomerID) REFERENCES Customers_News(CustomerID)
+    FOREIGN KEY (CustomerID) REFERENCES Customers_New(CustomerID)
 );
 ```
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Employees_News&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🧑‍💼 Employees_News">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Employees_New&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🧑‍💼 Employees_New">
 </p>
 
 Stores the employees of the company.
@@ -195,7 +195,7 @@ Stores the employees of the company.
 | `Salary` | `DECIMAL(10,2)` | | Salary amount |
 
 ```sql
-CREATE TABLE Employees_News(
+CREATE TABLE Employees_New(
     EmployeeID INT PRIMARY KEY,
     FirstName VARCHAR(50),
     LastName VARCHAR(50),
@@ -214,7 +214,7 @@ CREATE TABLE Employees_News(
 </p>
 
 ```
- Customers_News                      Orders_News
+ Customers_New                       Orders_New
 +------------------+               +------------------+
 | CustomerID  (PK) |──────────────<| OrderID     (PK) |
 | FirstName        |    1  :  Many | CustomerID  (FK) |
@@ -223,13 +223,13 @@ CREATE TABLE Employees_News(
 | RegistrationDate |               +------------------+
 +------------------+
 
- Employees_News  (standalone table, no relationship)
+ Employees_New  (standalone table, no relationship)
 ```
 
 | 🏷️ Term | 📝 Meaning |
 |---|---|
 | 🔑 **Primary Key (PK)** | Uniquely identifies each row in a table |
-| 🔗 **Foreign Key (FK)** | `Orders_News.CustomerID` must always match an existing `Customers_News.CustomerID`, so an order can never belong to a customer that does not exist |
+| 🔗 **Foreign Key (FK)** | `Orders_New.CustomerID` must always match an existing `Customers_New.CustomerID`, so an order can never belong to a customer that does not exist |
 | 👥 **One-to-Many** | One customer can place many orders, but each order belongs to only one customer |
 
 <p align="center">
@@ -254,8 +254,8 @@ Click any of the 17 queries to see its SQL and result on the sample database, al
 
 | CustomerID | FirstName | LastName | Email | RegistrationDate |
 |---|---|---|---|---|
-| 1 | kavita | khu | kavita.khu@email.com | 2022-03-15 |
-| 2 | bhavika | tha | bhavika.tha@email.com | 2021-11-02 |
+| 1 | John | Doe | john.doe@email.com | 2022-03-15 |
+| 2 | Jane | Smith | jane.smith@email.com | 2021-11-02 |
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Orders%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🛒 Orders Data">
@@ -263,8 +263,8 @@ Click any of the 17 queries to see its SQL and result on the sample database, al
 
 | OrderID | CustomerID | OrderDate | TotalAmount |
 |---|---|---|---|
-| 101 | 1 | 2023-07-11 | 150.50 |
-| 102 | 2 | 2023-08-03 | 200.75 |
+| 101 | 1 | 2023-07-01 | 150.50 |
+| 102 | 2 | 2023-07-03 | 200.75 |
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Employees%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🧑‍💼 Employees Data">
@@ -278,10 +278,10 @@ Click any of the 17 queries to see its SQL and result on the sample database, al
 Data is inserted with one `INSERT` statement per table, for example:
 
 ```sql
-INSERT INTO Orders_News (OrderID, CustomerID, OrderDate, TotalAmount)
+INSERT INTO Orders_New (OrderID, CustomerID, OrderDate, TotalAmount)
 VALUES
-(101, 1, '2023-07-11', 150.50),
-(102, 2, '2023-08-03', 200.75);
+(101, 1, '2023-07-01', 150.50),
+(102, 2, '2023-07-03', 200.75);
 ```
 
 <p align="center">
@@ -323,53 +323,53 @@ A **join** combines rows from two tables using a related column, here `CustomerI
 ```sql
 SELECT o.OrderID, o.CustomerID, c.FirstName, c.LastName,
        c.Email, o.OrderDate, o.TotalAmount
-FROM Customers_News c
-INNER JOIN Orders_News o
+FROM Customers_New c
+INNER JOIN Orders_New o
 ON c.CustomerID = o.CustomerID;
 ```
 
 | OrderID | CustomerID | FirstName | LastName | Email | OrderDate | TotalAmount |
 |---|---|---|---|---|---|---|
-| 101 | 1 | kavita | khu | kavita.khu@email.com | 2023-07-11 | 150.50 |
-| 102 | 2 | bhavika | tha | bhavika.tha@email.com | 2023-08-03 | 200.75 |
+| 101 | 1 | John | Doe | john.doe@email.com | 2023-07-01 | 150.50 |
+| 102 | 2 | Jane | Smith | jane.smith@email.com | 2023-07-03 | 200.75 |
 
 #### 2️⃣ LEFT JOIN
 
 | 🎯 Purpose | List **all customers**, along with their orders if they have any |
 |---|---|
-| 💡 **How it works** | Every row of the left table (`Customers_News`) is kept. If a customer has no order, the order columns show `NULL`. Useful to find customers who never ordered |
+| 💡 **How it works** | Every row of the left table (`Customers_New`) is kept. If a customer has no order, the order columns show `NULL`. Useful to find customers who never ordered |
 
 ```sql
 SELECT c.CustomerID, c.FirstName, c.LastName,
        o.OrderID, o.OrderDate, o.TotalAmount
-FROM Customers_News c
-LEFT JOIN Orders_News o
+FROM Customers_New c
+LEFT JOIN Orders_New o
 ON c.CustomerID = o.CustomerID;
 ```
 
 | CustomerID | FirstName | LastName | OrderID | OrderDate | TotalAmount |
 |---|---|---|---|---|---|
-| 1 | kavita | khu | 101 | 2023-07-11 | 150.50 |
-| 2 | bhavika | tha | 102 | 2023-08-03 | 200.75 |
+| 1 | John | Doe | 101 | 2023-07-01 | 150.50 |
+| 2 | Jane | Smith | 102 | 2023-07-03 | 200.75 |
 
 #### 3️⃣ RIGHT JOIN
 
 | 🎯 Purpose | List **all orders**, along with their customer details if available |
 |---|---|
-| 💡 **How it works** | Every row of the right table (`Orders_News`) is kept. It is the mirror image of a `LEFT JOIN` |
+| 💡 **How it works** | Every row of the right table (`Orders_New`) is kept. It is the mirror image of a `LEFT JOIN` |
 
 ```sql
 SELECT o.OrderID, o.CustomerID, o.OrderDate, o.TotalAmount,
        c.FirstName, c.LastName, c.Email
-FROM Customers_News c
-RIGHT JOIN Orders_News o
+FROM Customers_New c
+RIGHT JOIN Orders_New o
 ON c.CustomerID = o.CustomerID;
 ```
 
 | OrderID | CustomerID | OrderDate | TotalAmount | FirstName | LastName | Email |
 |---|---|---|---|---|---|---|
-| 101 | 1 | 2023-07-11 | 150.50 | kavita | khu | kavita.khu@email.com |
-| 102 | 2 | 2023-08-03 | 200.75 | bhavika | tha | bhavika.tha@email.com |
+| 101 | 1 | 2023-07-01 | 150.50 | John | Doe | john.doe@email.com |
+| 102 | 2 | 2023-07-03 | 200.75 | Jane | Smith | jane.smith@email.com |
 
 #### 4️⃣ FULL OUTER JOIN
 
@@ -380,15 +380,15 @@ ON c.CustomerID = o.CustomerID;
 ```sql
 SELECT c.CustomerID, c.FirstName, c.LastName,
        o.OrderID, o.OrderDate, o.TotalAmount
-FROM Customers_News AS c
-FULL OUTER JOIN Orders_News AS o
+FROM Customers_New AS c
+FULL OUTER JOIN Orders_New AS o
 ON c.CustomerID = o.CustomerID;
 ```
 
 | CustomerID | FirstName | LastName | OrderID | OrderDate | TotalAmount |
 |---|---|---|---|---|---|
-| 1 | kavita | khu | 101 | 2023-07-11 | 150.50 |
-| 2 | bhavika | tha | 102 | 2023-08-03 | 200.75 |
+| 1 | John | Doe | 101 | 2023-07-01 | 150.50 |
+| 2 | Jane | Smith | 102 | 2023-07-03 | 200.75 |
 
 > 📌 With the current sample data every customer has an order, so all four joins give the same rows. Insert a customer with no order to see the difference between them.
 
@@ -407,18 +407,18 @@ A **subquery** is a `SELECT` written inside another query. Here it calculates an
 ```sql
 SELECT c.CustomerID, c.FirstName, c.LastName,
        o.OrderID, o.TotalAmount
-FROM Customers_News c
-INNER JOIN Orders_News o
+FROM Customers_New c
+INNER JOIN Orders_New o
 ON c.CustomerID = o.CustomerID
 WHERE o.TotalAmount > (
     SELECT AVG(TotalAmount)
-    FROM Orders_News
+    FROM Orders_New
 );
 ```
 
 | CustomerID | FirstName | LastName | OrderID | TotalAmount |
 |---|---|---|---|---|
-| 2 | bhavika | tha | 102 | 200.75 |
+| 2 | Jane | Smith | 102 | 200.75 |
 
 #### 6️⃣ Employees above the average salary
 
@@ -428,10 +428,10 @@ WHERE o.TotalAmount > (
 
 ```sql
 SELECT EmployeeID, FirstName, LastName, Department, Salary
-FROM Employees_News
+FROM Employees_New
 WHERE Salary > (
     SELECT AVG(Salary)
-    FROM Employees_News
+    FROM Employees_New
 );
 ```
 
@@ -453,13 +453,13 @@ WHERE Salary > (
 SELECT OrderID, OrderDate,
        EXTRACT(YEAR FROM OrderDate)  AS OrderYear,
        EXTRACT(MONTH FROM OrderDate) AS OrderMonth
-FROM Orders_News;
+FROM Orders_New;
 ```
 
 | OrderID | OrderDate | OrderYear | OrderMonth |
 |---|---|---|---|
-| 101 | 2023-07-11 | 2023 | 7 |
-| 102 | 2023-08-03 | 2023 | 8 |
+| 101 | 2023-07-01 | 2023 | 7 |
+| 102 | 2023-07-03 | 2023 | 7 |
 
 #### 8️⃣ Difference in days from today
 
@@ -470,10 +470,10 @@ FROM Orders_News;
 ```sql
 SELECT OrderID, OrderDate,
        CURRENT_DATE - OrderDate AS DifferenceInDays
-FROM Orders_News;
+FROM Orders_New;
 ```
 
-> 📌 The result depends on the day you run the query, so it grows by 1 every day. Example: an order on `2023-07-11` gives the number of days between that date and today.
+> 📌 The result depends on the day you run the query, so it grows by 1 every day. Example: an order on `2023-07-01` gives the number of days between that date and today.
 
 #### 9️⃣ Format the date as DD-Mon-YYYY
 
@@ -484,13 +484,13 @@ FROM Orders_News;
 ```sql
 SELECT OrderID,
        TO_CHAR(OrderDate, 'DD-Mon-YYYY') AS FormattedOrderDate
-FROM Orders_News;
+FROM Orders_New;
 ```
 
 | OrderID | FormattedOrderDate |
 |---|---|
-| 101 | 11-Jul-2023 |
-| 102 | 03-Aug-2023 |
+| 101 | 01-Jul-2023 |
+| 102 | 03-Jul-2023 |
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=String%20Functions&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="🔤 String Functions">
@@ -505,13 +505,13 @@ FROM Orders_News;
 ```sql
 SELECT CustomerID,
        CONCAT(FirstName, ' ', LastName) AS FullName
-FROM Customers_News;
+FROM Customers_New;
 ```
 
 | CustomerID | FullName |
 |---|---|
-| 1 | kavita khu |
-| 2 | bhavika tha |
+| 1 | John Doe |
+| 2 | Jane Smith |
 
 #### 1️⃣1️⃣ Replace part of a string
 
@@ -522,15 +522,15 @@ FROM Customers_News;
 ```sql
 SELECT CustomerID,
        REPLACE(FirstName, 'John', 'Jonathan') AS UpdatedFirstName
-FROM Customers_News;
+FROM Customers_New;
 ```
 
 | CustomerID | UpdatedFirstName |
 |---|---|
-| 1 | kavita |
-| 2 | bhavika |
+| 1 | Jonathan |
+| 2 | Jane |
 
-> 📌 No name contains `John` in the sample data, so nothing changes. Insert a customer named `John` to see it working.
+> 📌 Customer 1's first name `John` becomes `Jonathan`; `Jane` has no match so it stays the same.
 
 #### 1️⃣2️⃣ Uppercase and lowercase
 
@@ -542,7 +542,7 @@ FROM Customers_News;
 SELECT EmployeeID,
        UPPER(FirstName) AS FirstName_Upper,
        LOWER(LastName)  AS LastName_Lower
-FROM Employees_News;
+FROM Employees_New;
 ```
 
 | EmployeeID | FirstName_Upper | LastName_Lower |
@@ -559,13 +559,13 @@ FROM Employees_News;
 ```sql
 SELECT CustomerID,
        TRIM(Email) AS TrimmedEmail
-FROM Customers_News;
+FROM Customers_New;
 ```
 
 | CustomerID | TrimmedEmail |
 |---|---|
-| 1 | kavita.khu@email.com |
-| 2 | bhavika.tha@email.com |
+| 1 | john.doe@email.com |
+| 2 | jane.smith@email.com |
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Window%20Functions&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="📊 Window Functions">
@@ -585,13 +585,13 @@ SELECT OrderID, OrderDate, TotalAmount,
            ORDER BY OrderDate
            ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
        ) AS RunningTotal
-FROM Orders_News;
+FROM Orders_New;
 ```
 
 | OrderID | OrderDate | TotalAmount | RunningTotal |
 |---|---|---|---|
-| 101 | 2023-07-11 | 150.50 | 150.50 |
-| 102 | 2023-08-03 | 200.75 | 351.25 |
+| 101 | 2023-07-01 | 150.50 | 150.50 |
+| 102 | 2023-07-03 | 200.75 | 351.25 |
 
 #### 1️⃣5️⃣ Rank orders by amount
 
@@ -602,7 +602,7 @@ FROM Orders_News;
 ```sql
 SELECT OrderID, TotalAmount,
        RANK() OVER (ORDER BY TotalAmount DESC) AS OrderRank
-FROM Orders_News;
+FROM Orders_New;
 ```
 
 | OrderID | TotalAmount | OrderRank |
@@ -633,7 +633,7 @@ SELECT OrderID, TotalAmount,
            WHEN TotalAmount > 500  THEN '5% Off'
            ELSE 'No Discount'
        END AS Discount
-FROM Orders_News;
+FROM Orders_New;
 ```
 
 | OrderID | TotalAmount | Discount |
@@ -660,7 +660,7 @@ SELECT EmployeeID, FirstName, LastName, Salary,
            WHEN Salary >= 40000 THEN 'Medium'
            ELSE 'Low'
        END AS SalaryCategory
-FROM Employees_News;
+FROM Employees_New;
 ```
 
 | EmployeeID | FirstName | LastName | Salary | SalaryCategory |
@@ -682,7 +682,7 @@ FROM Employees_News;
    \c DataTransformer
    ```
 2. 🧱 **Create the tables** in this order (Customers first, because Orders depends on it):
-   `Customers_News` → `Orders_News` → `Employees_News`
+   `Customers_New` → `Orders_New` → `Employees_New`
 3. 📥 **Insert the sample data** into each table.
 4. 🔎 **Run the 17 queries** one by one and compare your output with the tables shown above.
 
@@ -719,13 +719,13 @@ After completing this project you will be able to:
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Notes&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📝 Notes">
 </p>
 
-> ⚠️ **Use table names consistently.** Tables are created as `Customers_News`, `Orders_News` and `Employees_News`, so every query and the foreign key must use these exact names (with the **s**). Using `Customers_New` will give a *relation does not exist* error.
+> ⚠️ **Use table names consistently.** Tables are created as `Customers_New`, `Orders_New` and `Employees_New`, so every query and the foreign key must use these exact names (without an extra **s**). Using `Customers_News` will give a *relation does not exist* error.
 
-> 💡 With the current sample data, query 11 (`John` → `Jonathan`) and query 16 (discounts) show no changes, because no name is `John` and no order is above 500. Add more rows to see them in action.
+> 💡 With the current sample data, query 11 (`John` → `Jonathan`) actually changes Customer 1's first name since it is `John`, while query 16 (discounts) shows no change because no order is above 500. Add more rows to see the discount tiers in action.
 
 > 🕒 Query 8 gives a different answer every day because it uses `CURRENT_DATE`.
 
-> 🔤 PostgreSQL folds unquoted names to lowercase, so `Customers_News` and `customers_news` are the same table.
+> 🔤 PostgreSQL folds unquoted names to lowercase, so `Customers_New` and `customers_new` are the same table.
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:E0A95F,100:C77BA8&height=4" width="100%" alt="divider">
