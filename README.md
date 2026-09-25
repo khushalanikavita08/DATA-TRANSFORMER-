@@ -1,4 +1,4 @@
-# DATA-TRANSFORMER-
+<img width="1408" height="768" alt="image_43592672 (1)" src="https://github.com/user-attachments/assets/01602902-c9ef-496a-968b-812bc38c1582" /># DATA-TRANSFORMER-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&height=240&section=header&text=DATA%20TRANSFORMER&fontSize=56&fontColor=ffffff&fontAlignY=38&desc=Database%20Design%20%7C%20Joins%20%7C%20Functions%20%7C%20Analytics&descSize=22&descAlignY=60" alt="DataTransformer banner">
 </p>
@@ -127,6 +127,9 @@ Connect to the new database (in `psql`):
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tables%20%28Schema%29&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📋 Tables (Schema)">
 </p>
+![Uploading sql-visualization-guide.png…]()
+
+
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers_News&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers_News">
