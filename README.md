@@ -1,4 +1,4 @@
-<img width="1408" height="768" alt="image_43592672" src="https://github.com/user-attachments/assets/ad2da1aa-bd56-44a1-99cf-6e2f80bafcac" />  # DATA-TRANSFORMER-
+  # DATA-TRANSFORMER-
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&height=240&section=header&text=DATA%20TRANSFORMER&fontSize=56&fontColor=ffffff&fontAlignY=38&desc=Database%20Design%20%7C%20Joins%20%7C%20Functions%20%7C%20Analytics&descSize=22&descAlignY=60" alt="DataTransformer banner">
 </p>
@@ -245,7 +245,8 @@ CREATE TABLE Employees_New(
 🔴 **[https://claude.ai/artifact/8KyRT8NJh77XhWEHE3hrxW](https://claude.ai/artifact/8KyRT8NJh77XhWEHE3hrxW)**
 
 Click any of the 17 queries to see its SQL and result on the sample database, all in one page.
- <img width="1408" height="768" alt="image_43592672 (1)" src="https://github.com/user-attachments/assets/8a5a761b-55e9-40ab-a8d9-0d1c8291acc5" />
+
+<img width="1408" height="768" alt="image_43592672 (1)" src="https://github.com/user-attachments/assets/8a5a761b-55e9-40ab-a8d9-0d1c8291acc5" />
 
 
 
