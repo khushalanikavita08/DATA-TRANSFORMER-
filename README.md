@@ -235,14 +235,11 @@ CREATE TABLE Employees_News(
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Sample%20Data&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="🧾 Sample Data">
 </p>
+
+**🔴 [Open the live query explorer →](https://claude.ai/artifact/8KyRT8NJh77XhWEHE3hrxW)**  
+Click any of the 17 queries to see its SQL and result on the sample database, all in one page.
+
  
-
-
-
-
-
-
-
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=80&text=Customers%20Data&fontSize=24&fontColor=ffffff&fontAlignY=40" alt="👤 Customers Data">
