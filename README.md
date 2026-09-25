@@ -128,9 +128,7 @@ Connect to the new database (in `psql`):
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:E0A95F,100:C77BA8&section=header&height=110&text=Tables%20%28Schema%29&fontSize=34&fontColor=ffffff&fontAlignY=40" alt="📋 Tables (Schema)">
 </p>
-<img width="1408" height="768" alt="image_43592672 (1)" src="https://github.com/user-attachments/assets/01602902-c9ef-496a-968b-812bc38c1582"
-
-
+<img width="1408" height="768" alt="sql-visualization-guide" src="https://github.com/user-attachments/assets/87b33172-ff1f-4f7d-931e-48eebe245d8a" />
 
 
 
